@@ -1,0 +1,3 @@
+[submodule "docker-xenforo"]
+	path = docker-xenforo
+	url = https://github.com/xfrocks/docker-xenforo.git
