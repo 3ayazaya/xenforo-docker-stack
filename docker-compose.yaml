@@ -57,3 +57,11 @@ services:
     restart: always
     ports:
       - "127.0.0.1:8081:8080"
+
+  nginx-exporter:
+    image: nginx/nginx-prometheus-exporter:1.4
+    container_name: xenforo-nginx-exporter
+    restart: always
+    command: '--nginx.scrape-uri=http://xenforo-web/basic_status'
+    ports:
+      - "9113:9113"
