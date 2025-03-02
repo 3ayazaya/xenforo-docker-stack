@@ -1,3 +1,4 @@
 mysql_data
 redis_data
 .env
+backups
